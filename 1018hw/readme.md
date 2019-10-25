@@ -8,4 +8,4 @@
 ![](quicksort_chart.png)
 
 ### 參考資料
-![](參考資料.jpg)
+![](參考資料.JPG)
