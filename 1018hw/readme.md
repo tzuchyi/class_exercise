@@ -2,7 +2,7 @@
 
 *作業參考資料在最底部
 
-### [程式碼](https://nbviewer.jupyter.org/github/tzuchyi/class_exercise/blob/master/1018hw/QuickSort.ipynb)
+### 程式碼為上方 quicksort.ipynb
 
 ### 流程圖
 ![](quicksort_chart.png)
