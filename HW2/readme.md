@@ -1,3 +1,5 @@
+##[mergesort學習歷程](https://nbviewer.jupyter.org/github/tzuchyi/class_exercise/blob/master/HW2/merge sort_製作歷程.ipynb)
+##[heapsort學習歷程](https://nbviewer.jupyter.org/github/tzuchyi/class_exercise/blob/master/HW2/ sort_製作歷程.ipynb)
 
 
 ## 參考資料：  
