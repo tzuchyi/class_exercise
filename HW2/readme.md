@@ -5,7 +5,7 @@
 ## merge與heap的排序比較
 > merge與heap平均、最快、最慢花費時間皆相同，皆為O(nlogn)    
 > 但在空間上heap所佔的空間會較merge少，因為heap是直接在原本的序列上做更改，並沒有增加新的序列。merge為O(n)、heap為O(1)。  
-> 這個部分因為只聽老師上課講解，誤以為拿掉底部的數是指會生成新的序列，故我製作的heapsort空間複雜度和mergesort相同，接生成了新的序列。  
+> 這個部分因為只聽老師上課講解，誤以為拿掉底部的數是指會生成新的序列，故我製作的heapsort空間複雜度和mergesort相同，皆生成了新的序列。  
 
 ## 參考資料：  
 > merge_sort演算法了解 https://docs.google.com/presentation/d/e/2PACX-1vToxkEzc1H1RT5MI9G941KQFBC7GO_Efn95wTqXLEdr3LDBSNcQb-M46IOC-_RzZih6IBEwwy3rWQuE/pub?start=false&loop=false&delayms=3000&slide=id.g6504c48e6e_0_17    
