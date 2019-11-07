@@ -1,6 +1,6 @@
 ## 學習歷程：
-> [mergesort學習歷程](https://nbviewer.jupyter.org/github/tzuchyi/class_exercise/blob/master/HW2/mergesort_製作歷程.ipynb)  
-> [heapsort學習歷程](https://nbviewer.jupyter.org/github/tzuchyi/class_exercise/blob/master/HW2/heapsort_製作歷程.ipynb)  
+> [mergesort學習歷程](https://nbviewer.jupyter.org/github/tzuchyi/class_exercise/blob/master/HW2/merge_sort_製作歷程.ipynb)  
+> [heapsort學習歷程](https://nbviewer.jupyter.org/github/tzuchyi/class_exercise/blob/master/HW2/heap_sort_製作歷程.ipynb)  
 
 ## merge與heap的排序比較
 > merge與heap平均、最快、最慢花費時間皆相同，皆為O(nlogn)    
