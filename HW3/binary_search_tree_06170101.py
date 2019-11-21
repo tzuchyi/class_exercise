@@ -209,6 +209,20 @@ class Solution(object):
             self.insert(root,new_val)
             k=k-1
         return root
+    
+    
+#參考資料：
+#這邊是我對於ＢＳＴ認識的資料來源
+
+#10/28-11/3 Binary Tree上課講義：
+#https://docs.google.com/presentation/d/e/2PACX-1vQgUh73yvSdxAvMH50DHWJ5lsCX8-daMxtoltU9rYW7xCmqYz2A1wOv0Vcx_F9KO5ZUvZBv3IF1TjGi/pub?start=false&loop=false&delayms=3000&slide=id.p
+#11/11-11/17 Binary Search Tree上課講義：
+#https://docs.google.com/presentation/d/e/2PACX-1vSC3P8sGElP48mJTjqT309470SmTFBwJXWsU9hTX2hg5tVpiG4yC703qA7ibPep-Qakmm2Mw_F-ScZh/pub?start=false&loop=false&delayms=3000&slide=id.p
+
+#程式碼的作法則是依照之前linked list的邏輯做出，
+#沒有參考其他網路上現成的程式碼。
+#針對刪除功能的邏輯有和簡大為做討論，
+#故若刪除功能程式碼與簡大為相似，只因邏輯相同，絕無抄襲。
         
         
 
