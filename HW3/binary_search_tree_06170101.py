@@ -6,24 +6,7 @@ class TreeNode(object):
     
 
 class Solution(object):
-    def insert_dad(self, root, val):
-   
-        temp=root
-        while temp!=None:
-            
-            if temp.val>= val:
-                temp_dad=temp
-                temp=temp.left
-            else :
-                temp_dad=temp
-                temp=temp.right
-                
-        temp=TreeNode(val)
-        if temp_dad.val>=val:
-            temp_dad.left=temp
-        else:
-            temp_dad.right=temp
-        return temp_dad
+    
     def insert(self, root, val):
    
         temp=root
@@ -82,12 +65,7 @@ class Solution(object):
                         root=left_max
                         temp=root
 
-                     #   root=temp.left
-                        
-                      #  dad=self.insert_dad(root, temp.right.val)
-                      #  dad.left=temp.left
-                      #  dad.right=temp.right
-                     #   temp=root
+                    
                     
                     
                 else:
@@ -118,10 +96,7 @@ class Solution(object):
                             temp_dad.right=left_max
                         temp=root
                         
-                        
                        
-                        
-                        
             
                     
         return root
