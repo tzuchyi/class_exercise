@@ -6,7 +6,8 @@ class TreeNode(object):
     
 
 class Solution(object):
-    
+
+
     def insert(self, root, val):
    
         temp=root
@@ -58,15 +59,18 @@ class Solution(object):
                         while left_max.right!=None:
                             left_max_dad=left_max
                             left_max=left_max.right
+                        if left_max.left==None:
+                            left_max_dad.right=None
+                        else:
+                            left_max_dad.right=left_max.left
                             
-                        left_max_dad.right=None
+                   
                         left_max.left=temp.left
                         left_max.right=temp.right
                         root=left_max
                         temp=root
 
-                    
-                    
+                  
                     
                 else:
                     if temp.left==None and temp.right==None:
@@ -85,8 +89,12 @@ class Solution(object):
                         while left_max.right!=None:
                             left_max_dad=left_max
                             left_max=left_max.right
+                        if left_max.left==None:
+                            left_max_dad.right=None
+                        else:
+                            left_max_dad.right=left_max.left
                             
-                        left_max_dad.right=None
+                        #left_max_dad.right=None
                         left_max.left=temp.left
                         left_max.right=temp.right
                         
@@ -96,13 +104,17 @@ class Solution(object):
                             temp_dad.right=left_max
                         temp=root
                         
+                        
                        
+                        
+                        
             
                     
         return root
         
-   
-      
+
+            
+        
        
     def search(self, root, target):
         
@@ -122,6 +134,7 @@ class Solution(object):
             
             else:
                 return temp
+        return None
 
         
         
