@@ -7,6 +7,31 @@ class TreeNode(object):
 
 class Solution(object):
 
+    def inorder(self, root):
+        if root is None: 
+            return     
+        else:
+            self.inorder(root.left) 
+            print(root.val)
+            self.inorder(root.right)
+#    def insert_dad(self, root, val):
+#   
+#        temp=root
+#        while temp!=None:
+#            
+#            if temp.val>= val:
+#                temp_dad=temp
+#                temp=temp.left
+#            else :
+#                temp_dad=temp
+#                temp=temp.right
+#
+#        temp=TreeNode(val)
+#        if temp_dad.val>=val:
+#            temp_dad.left=temp
+#        else:
+#            temp_dad.right=temp
+#        return temp_dad
 
     def insert(self, root, val):
    
@@ -45,6 +70,7 @@ class Solution(object):
                 temp=temp.right                                
             
             elif temp.val==target:
+                
                 if temp_dad is None:
                     if temp.left==None:
                         root=temp.right
@@ -52,57 +78,114 @@ class Solution(object):
                     elif temp.right==None:
                         root=temp.left
                         temp=root
-                    else :
-                        
-                        left_max=temp.left
-                        left_max_dad=temp
-                        while left_max.right!=None:
-                            left_max_dad=left_max
-                            left_max=left_max.right
-                        if left_max.left==None:
-                            left_max_dad.right=None
-                        else:
-                            left_max_dad.right=left_max.left
+                    else:
+                #    elif temp.right!=None and temp.left!=None :
+                        if temp.left.right==None:                            
                             
-                   
-                        left_max.left=temp.left
-                        left_max.right=temp.right
-                        root=left_max
-                        temp=root
+                            temp.left.right=temp.right
+                            root=temp.left
+                            temp=root
+                            
+                        else:
+                                
+                            left_max=temp.left
+                            left_max_dad=temp
+                            while left_max.right!=None:
+                                left_max_dad=left_max
+                                left_max=left_max.right
+                            if left_max.left==None:
+                                left_max_dad.right=None
+                            else:
+                                left_max_dad.right=left_max.left
 
-                  
+                        #    left_max_dad.right=None
+                            left_max.left=temp.left
+                            left_max.right=temp.right
+                            root=left_max
+                            temp=root
+
+                     #   root=temp.left
+                        
+                      #  dad=self.insert_dad(root, temp.right.val)
+                      #  dad.left=temp.left
+                      #  dad.right=temp.right
+                     #   temp=root
+                    
                     
                 else:
-                    if temp.left==None and temp.right==None:
-                        temp_dad.left=None
-                        temp=None
-                    elif temp.left==None:
-                        temp_dad.left=temp.right
-                        temp=temp.right
-                    elif temp.right==None:
-                        temp_dad.left=temp.left
-                        temp=temp.left
+                    if temp_dad.val>target:
+                        
+                        if temp.left==None and temp.right==None:
+                            temp_dad.left=None
+                            temp=None
+                        elif temp.left==None:
+                            temp_dad.left=temp.right
+                            temp=temp.right
+                        elif temp.right==None:
+                            temp_dad.left=temp.left
+                            temp=temp.left
+                        else:
+                            if temp.left.right==None:
+                                temp_dad.left=temp.left
+                                temp_dad.left.right=temp.right
+                                temp=root
+                            else:
+
+                                left_max=temp.left
+                                left_max_dad=temp
+                                while left_max.right!=None:
+                                    left_max_dad=left_max
+                                    left_max=left_max.right
+                                if left_max.left==None:
+                                    left_max_dad.right=None
+                                else:
+                                    left_max_dad.right=left_max.left
+
+                                #left_max_dad.right=None
+                                left_max.left=temp.left
+                                left_max.right=temp.right
+
+                                if temp_dad.val>target:
+                                    temp_dad.left=left_max
+                                else:
+                                    temp_dad.right=left_max
+                                temp=root
                     else:
-                        
-                        left_max=temp.left
-                        left_max_dad=temp
-                        while left_max.right!=None:
-                            left_max_dad=left_max
-                            left_max=left_max.right
-                        if left_max.left==None:
-                            left_max_dad.right=None
+                        if temp.left==None and temp.right==None:
+                            temp_dad.right=None
+                            temp=None
+                        elif temp.left==None:
+                            temp_dad.right=temp.right
+                            temp=temp.right
+                        elif temp.right==None:
+                            temp_dad.right=temp.left
+                            temp=temp.left
                         else:
-                            left_max_dad.right=left_max.left
-                            
-                        #left_max_dad.right=None
-                        left_max.left=temp.left
-                        left_max.right=temp.right
-                        
-                        if temp_dad.val>target:
-                            temp_dad.left=left_max
-                        else:
-                            temp_dad.right=left_max
-                        temp=root
+                            if temp.left.right==None:
+                                temp_dad.right=temp.left
+                                temp_dad.right.right=temp.right
+                                temp=root
+                            else:
+
+                                left_max=temp.left
+                                left_max_dad=temp
+                                while left_max.right!=None:
+                                    left_max_dad=left_max
+                                    left_max=left_max.right
+                                if left_max.left==None:
+                                    left_max_dad.right=None
+                                else:
+                                    left_max_dad.right=left_max.left
+
+                                #left_max_dad.right=None
+                                left_max.left=temp.left
+                                left_max.right=temp.right
+
+                                if temp_dad.val>target:
+                                    temp_dad.left=left_max
+                                else:
+                                    temp_dad.right=left_max
+                                temp=root
                         
                         
                        
@@ -112,7 +195,24 @@ class Solution(object):
                     
         return root
         
-
+    #    temp=root.left
+        
+        
+     #   while temp!=None:
+      #      temp_dad=root
+       #     if temp.val==target:
+         #       if temp.left==None & temp.right==None:
+           #         temp_dad.left=None
+             #   elif temp.left==None:
+               #     temp_dad.left=temp.right
+         #       elif temp.right==None:
+           #         temp_dad.left=temp.left
+             #   else:
+             #       temp_dad.left=temp.left
+             #       temp_dad.left.right=temp.right
+           # temp=temp.left
+            
+            
             
         
        
@@ -139,9 +239,10 @@ class Solution(object):
         
         
     def modify(self, root, target, new_val):
+        k=0
         temp=root
         temp_dad=None
-        k=0
+        
         
         while temp!=None:
             
@@ -154,6 +255,8 @@ class Solution(object):
                 temp=temp.right                                
             
             elif temp.val==target:
+                k=k+1
+                
                 if temp_dad is None:
                     if temp.left==None:
                         root=temp.right
@@ -161,55 +264,126 @@ class Solution(object):
                     elif temp.right==None:
                         root=temp.left
                         temp=root
-                    else :
+                    else:
+                #    elif temp.right!=None and temp.left!=None :
+                        if temp.left.right==None:                            
+                            
+                            temp.left.right=temp.right
+                            root=temp.left
+                            temp=root
+                            
+                        else:
+                                
+                            left_max=temp.left
+                            left_max_dad=temp
+                            while left_max.right!=None:
+                                left_max_dad=left_max
+                                left_max=left_max.right
+                            if left_max.left==None:
+                                left_max_dad.right=None
+                            else:
+                                left_max_dad.right=left_max.left
+
+                        #    left_max_dad.right=None
+                            left_max.left=temp.left
+                            left_max.right=temp.right
+                            root=left_max
+                            temp=root
+
+                     #   root=temp.left
                         
-                        left_max=temp.left
-                        left_max_dad=temp
-                        while left_max.right!=None:
-                            left_max_dad=left_max
-                            left_max=left_max.right
-                            
-                        left_max_dad.right=None
-                        left_max.left=temp.left
-                        left_max.right=temp.right
-                        root=left_max
-                        temp=root
-                            
+                      #  dad=self.insert_dad(root, temp.right.val)
+                      #  dad.left=temp.left
+                      #  dad.right=temp.right
+                     #   temp=root
+                    
                     
                 else:
-                    if temp.left==None and temp.right==None:
-                        temp_dad.left=None
-                        temp=None
-                    elif temp.left==None:
-                        temp_dad.left=temp.right
-                        temp=temp.right
-                    elif temp.right==None:
-                        temp_dad.left=temp.left
-                        temp=temp.left
-                    else:
+                    if temp_dad.val>target:
                         
-                        left_max=temp.left
-                        left_max_dad=temp
-                        while left_max.right!=None:
-                            left_max_dad=left_max
-                            left_max=left_max.right
-                            
-                        left_max_dad.right=None
-                        left_max.left=temp.left
-                        left_max.right=temp.right
-                        
-                        if temp_dad.val>target:
-                            temp_dad.left=left_max
+                        if temp.left==None and temp.right==None:
+                            temp_dad.left=None
+                            temp=None
+                        elif temp.left==None:
+                            temp_dad.left=temp.right
+                            temp=temp.right
+                        elif temp.right==None:
+                            temp_dad.left=temp.left
+                            temp=temp.left
                         else:
-                            temp_dad.right=left_max
-                        temp=root                        
+                            if temp.left.right==None:
+                                temp_dad.left=temp.left
+                                temp_dad.left.right=temp.right
+                                temp=root
+                            else:
+
+                                left_max=temp.left
+                                left_max_dad=temp
+                                while left_max.right!=None:
+                                    left_max_dad=left_max
+                                    left_max=left_max.right
+                                if left_max.left==None:
+                                    left_max_dad.right=None
+                                else:
+                                    left_max_dad.right=left_max.left
+
+                                #left_max_dad.right=None
+                                left_max.left=temp.left
+                                left_max.right=temp.right
+
+                                if temp_dad.val>target:
+                                    temp_dad.left=left_max
+                                else:
+                                    temp_dad.right=left_max
+                                temp=root
+                    else:
+                        if temp.left==None and temp.right==None:
+                            temp_dad.right=None
+                            temp=None
+                        elif temp.left==None:
+                            temp_dad.right=temp.right
+                            temp=temp.right
+                        elif temp.right==None:
+                            temp_dad.right=temp.left
+                            temp=temp.left
+                        else:
+                            if temp.left.right==None:
+                                temp_dad.right=temp.left
+                                temp_dad.right.right=temp.right
+                                temp=root
+                            else:
+
+                                left_max=temp.left
+                                left_max_dad=temp
+                                while left_max.right!=None:
+                                    left_max_dad=left_max
+                                    left_max=left_max.right
+                                if left_max.left==None:
+                                    left_max_dad.right=None
+                                else:
+                                    left_max_dad.right=left_max.left
+
+                                #left_max_dad.right=None
+                                left_max.left=temp.left
+                                left_max.right=temp.right
+
+                                if temp_dad.val>target:
+                                    temp_dad.left=left_max
+                                else:
+                                    temp_dad.right=left_max
+                                temp=root
                   
-                k=k+1
+                
         while k>0:
             self.insert(root,new_val)
             k=k-1
         return root
-    
+        
+        
+
+
+
+        
     
 #參考資料：
 #這邊是我對於ＢＳＴ認識的資料來源
