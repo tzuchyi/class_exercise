@@ -87,6 +87,14 @@ class MyHashSet:
                         return True
                     else:
                         return False
+                
+                
+#參考資料
+#### 原理及概念上理解：
+#https://zh.wikipedia.org/wiki/散列函數  
+#http://alrightchiu.github.io/SecondRound/hash-tableintrojian-jie.html  
+#https://blog.techbridge.cc/2017/01/21/simple-hash-table-intro/   
+#https://docs.google.com/presentation/d/e/2PACX-1vT1HO9Nl475k2bR0l1x8_Tr4V5Wzx0BEqp9bpmHckvj8kTeJehhYVlOJUDVPhLQm6kjGCJ_sLMSBUw5/pub?start=false&loop=false&delayms=3000&slide=id.p
                         
                     
                 
