@@ -29,7 +29,7 @@ class MyHashSet:
                 else:
                     while head.next!=None:
                         head=head.next
-                    head.next.val=keycode
+                    head.next=ListNode(keycode)
                     
                 
 
@@ -98,3 +98,4 @@ class MyHashSet:
                         
                     
                 
+
