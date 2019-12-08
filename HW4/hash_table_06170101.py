@@ -25,11 +25,11 @@ class MyHashSet:
                 head=self.data[i]
                 if self.data[i]==None:
                     
-                    self.data[i]=ListNode(key)
+                    self.data[i]=ListNode(keycode)
                 else:
                     while head.next!=None:
                         head=head.next
-                    head.next.val=key
+                    head.next.val=keycode
                     
                 
 
@@ -46,17 +46,17 @@ class MyHashSet:
                 head=self.data[i]
                 
                 while head!=None:
-                    if head.val==key and head.next==None:
+                    if head.val==keycode and head.next==None:
                         self.data[i]=None
                         head=self.data[i]
-                    elif head.val==key and head.next!=None:
+                    elif head.val==keycode and head.next!=None:
                         self.data[i]=head.next
                         head=self.data[i]
                     else:
-                        while head.val!=key and head.next!=None:
+                        while head.val!=keycode and head.next!=None:
                             dad=head
                             head=head.next
-                        if head.val==key:
+                        if head.val==keycode:
                             if head.next==None:
                                 dad.next=None
                                 head=None
@@ -81,9 +81,9 @@ class MyHashSet:
                 if self.data[i]==None:
                     return False
                 else:
-                    while head.val!=key and head.next!=None:
+                    while head.val!=keycode and head.next!=None:
                         head=head.next
-                    if head.val==key:
+                    if head.val==keycode:
                         return True
                     else:
                         return False
