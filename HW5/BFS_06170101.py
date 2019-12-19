@@ -14,6 +14,7 @@ class Graph:
         
         ans=[]
         temp=[s]
+        exsist=set("s")
      
 
         
@@ -24,8 +25,9 @@ class Graph:
             
             
             for i in self.graph[out]:
-                if i not in ans:
+                if i not in ans and i not in exsist:
                     temp.append(i)
+                    exsist.add(i)
 
                     
         return ans
@@ -36,6 +38,7 @@ class Graph:
         
         ans=[]
         temp=[s]
+        exsist=set("s")
       
 
         
@@ -46,8 +49,9 @@ class Graph:
             
             
             for i in self.graph[out]:
-                if i not in ans:
+                if i not in ans and i not in exsist:
                     temp.append(i)
+                    exsist.add(i)
 
                     
         return ans
