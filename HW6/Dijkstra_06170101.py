@@ -8,10 +8,12 @@ class Graph():
         self.graph = [] 
         self.graph_matrix = [[0 for column in range(vertices)]  
                     for row in range(vertices)] 
+        
         self.dict=defaultdict(list)
         
     def addEdge(self,u,v,w): 
-        self.graph.append([u,v,w])
+        self.dict[w].append([u,v])
+     
 
     def Dijkstra(self, s): 
         long=len(self.graph)
@@ -49,8 +51,9 @@ class Graph():
             for i in range (self.V):
                 dictionary[str(i)] = distance[i]
         return dictionary
-
+    
     def Kruskal(self):
+        
         result = {}
         val = sorted(self.dict)
         checked = [column for column in range(self.V)]  
@@ -63,4 +66,5 @@ class Graph():
                     checked = [checked[u]if x==checked[v] else x for x in checked]
                     result[str(u)+'-'+str(v)] = i
         return result
+    
 
