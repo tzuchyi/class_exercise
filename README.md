@@ -23,20 +23,29 @@
 - [week 6]():heap_sort.
 *[程式碼](HW2/heapsort/heap_sort_06170108.py)
 - [week 7]():merge_sort . 
-*程式碼](HW2/mergesort/merge_sort_06170108.py)
-- [week 8]():Binary tree. 
-- [week 9]():Binary Search Tree.
+*[程式碼](HW2/mergesort/merge_sort_06170108.py)
+- [week 8]():Binary_tree. 
+- [week 9]():Binary_Search_Tree.
 *[程式碼](HW3/binary_search_tree_06170108.py)
 - [week 10]():期中考. 
-- [week 11]():Red Black Tree. 
-- [week 12]():Hash Table
+- [week 11]():Red_Black_Tree. 
+- [week 12]():Hash_Table
 *[程式碼](HW4/hash_table_06170108.py)
 - [week 13]():BFS/DFS
 *[程式碼](HW5/BFS_06170108.py)
-- [week 14]():Minimum Spanning Tree - Kruskal
+- [week 14]():Minimum_Spanning_Tree - Kruskal
 * [程式碼](HW6/Dijkstra_06170108.py)
-- [week 15]():Shortest Path - Dijkstra
+- [week 15]():Shortest_Path - Dijkstra
 * [程式碼](HW6/Dijkstra_06170108.py)
 - [week 16]():分享區塊鏈作品
 - [week 17]():期末考
 - [week 18]():回家投票
+
+
+# HOMEWORK
+- [HW1](https://github.com/hello02923/lai/blob/master/HW1/readme.md)
+- [HW2](https://github.com/tzuchyi/class_exercise/tree/master/HW2)
+- [HW3](https://github.com/tzuchyi/class_exercise/tree/master/HW3) 
+- [HW4](https://github.com/tzuchyi/class_exercise/tree/master/HW4)
+- [HW5](https://github.com/tzuchyi/class_exercise/tree/master/HW5)
+- [HW6](https://github.com/tzuchyi/class_exercise/tree/master/HW6)
