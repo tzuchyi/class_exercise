@@ -10,7 +10,7 @@
   >像排隊一樣，不可以插隊，第一個進去的人，第一個出去。
 - week 4:insertion_sort
 - [week 5](https://github.com/tzuchyi/class_exercise/tree/master/1018hw):Quick_Sort.
-    * [程式碼](https://github.com/tzuchyi/class_exercise/blob/master/1018hw/QuickSort_change.ipynb)
+   * [程式碼](https://github.com/tzuchyi/class_exercise/blob/master/1018hw/QuickSort_change.ipynb)
 - [week 6&7](https://github.com/tzuchyi/class_exercise/tree/master/HW2):heap_sort&merge_sort  
 
     *[heap_sort](https://github.com/tzuchyi/class_exercise/blob/master/HW2/heap_sort_06170101.py)
@@ -28,7 +28,7 @@
 
    *[程式碼](https://github.com/tzuchyi/class_exercise/blob/master/HW5/BFS_06170101.pyy)
 - [week 14＆15](https://github.com/tzuchyi/class_exercise/blob/master/HW6/Dijkstra_06170101.py):Kruskal&Dijkstra
-    * [程式碼](HW6/Dijkstra_06170108.py)
+   * [程式碼](HW6/Dijkstra_06170108.py)
 - week 16:分享區塊鏈作品
 - week 17:期末考
 - week 18:回家投票
