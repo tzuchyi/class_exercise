@@ -1,4 +1,3 @@
-# **1018作業**
 
 *作業參考資料在最底部
 
@@ -7,7 +6,7 @@
 
 
 ### 流程圖
-![](quicksort_chart.png)
+![](https://github.com/tzuchyi/class_exercise/blob/master/1018hw/quicksort_chart.png)
 
 ### 參考資料
-![](參考資料.JPG)
+![](https://github.com/tzuchyi/class_exercise/blob/master/1018hw/%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99.JPG)
