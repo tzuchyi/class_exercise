@@ -24,8 +24,8 @@
   * queue
   >像排隊一樣，不可以插隊，第一個進去的人，第一個出去。
 - week 4:insertion_sort
-- [week 5](https://github.com/tzuchyi/class_exercise/tree/master/1018hw):Quick_Sort.
-   * [程式碼](https://github.com/tzuchyi/class_exercise/blob/master/1018hw/QuickSort_change.ipynb)
+- [week 5](https://github.com/tzuchyi/class_exercise/tree/master/HW1):Quick_Sort.
+   * [程式碼](https://github.com/tzuchyi/class_exercise/blob/master/HW1/QuickSort_change.ipynb)
 - [week 6&7](https://github.com/tzuchyi/class_exercise/tree/master/HW2):heap_sort&merge_sort  
 
     * [heap_sort](https://github.com/tzuchyi/class_exercise/blob/master/HW2/heap_sort_06170101.py)
@@ -59,3 +59,4 @@
 
 # 心得
 演算法蠻酷的，可以把圖像概念以程式碼呈現。如果這學期是李佳蓉老師可能會學得更愉快吧！
+我自己一開始是蠻有興趣的啦，但有一次我只是將排序的順序寫錯寫成大排到小，你要扣我一半程式碼的成績我很不能夠理解，你說你的宗旨是想讓大家自己寫程式碼，如果你有機會可以去看看我的merge/heap sort，我只有聽課理解演算法後就將觀念實體化，我敢賭你找不到任何一個寫的和我一樣。我全部自己花了好幾天寫出來，你卻要我一半分數？對我來說你就是為了扣我分而拿我分
