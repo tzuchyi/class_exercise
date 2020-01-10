@@ -1,12 +1,20 @@
-# class_exercise
-# 自我介紹  
-高子淇 06170101 3a
-  愛打傳說＿大帳S/小帳ABC都有  (代練可議價)
-  喜歡躺在床上做所有事情/
-  超愛吃火鍋/
-  不喜歡做家事/
-  努力戒飲料但是很愛喝奶茶/
+# 資料結構與演算法
 
+
+# 自我介紹  
+高子淇 06170101 3a  
+
+  愛打傳說＿大帳S/小帳ABC都有  (代練可議價) 
+  
+  喜歡躺在床上做所有事情/
+  
+  超愛吃火鍋/
+  
+  不喜歡做家事/
+  
+  努力戒飲料但是很愛喝奶茶/
+  
+# 課程導覽
 - week 1:簡介. 
 - week 2:linked-list.
   >空間不需要連續，每一個節點連接下一個節點需要知道有多少節點，要從頭到尾走過
@@ -48,3 +56,6 @@
 - [HW4](https://github.com/tzuchyi/class_exercise/tree/master/HW4)
 - [HW5](https://github.com/tzuchyi/class_exercise/tree/master/HW5)
 - [HW6](https://github.com/tzuchyi/class_exercise/tree/master/HW6)
+
+# 心得
+演算法蠻酷的，可以把圖像概念以程式碼呈現。如果這學期是李佳蓉老師可能會學得更愉快吧！
