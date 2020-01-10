@@ -21,9 +21,11 @@
    *[程式碼](https://github.com/tzuchyi/class_exercise/blob/master/HW3/binary_search_tree_06170101.py)
 - week 10:期中考. 
 - week 11:Red_Black_Tree. 
-- [week 12](https://github.com/tzuchyi/class_exercise/blob/master/HW4/hash_table%E8%A3%BD%E4%BD%9C.ipynb):Hash_Table
+- [week 12](https://github.com/tzuchyi/class_exercise/blob/master/HW4/hash_table%E8%A3%BD%E4%BD%9C.ipynb):Hash_Table  
+
    *[程式碼](https://github.com/tzuchyi/class_exercise/blob/master/HW4/hash_table_06170101.py)
-- [week 13](https://github.com/tzuchyi/class_exercise/blob/master/HW5/BFS_DFS%E6%B5%81%E7%A8%8B%E5%9C%96.ipynb):BFS/DFS
+- [week 13](https://github.com/tzuchyi/class_exercise/blob/master/HW5/BFS_DFS%E6%B5%81%E7%A8%8B%E5%9C%96.ipynb):BFS/DFS  
+
    *[程式碼](https://github.com/tzuchyi/class_exercise/blob/master/HW5/BFS_06170101.pyy)
 - [week 14＆15](https://github.com/tzuchyi/class_exercise/blob/master/HW6/Dijkstra_06170101.py):Kruskal&Dijkstra
     * [程式碼](HW6/Dijkstra_06170108.py)
